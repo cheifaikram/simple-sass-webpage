@@ -20,7 +20,7 @@
 
     ul{
         list-style: none;
-        
+
         &:after{
             content: "";
             display: block;
@@ -38,30 +38,44 @@
         background-color: $lightblue;
         margin-top: -900px;
         transition: all 0.5s ease;
-        font-size: 20px;
+        font-size: 18px;
+
+        @include desktop {
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            padding-left :50rem;
+            width: auto;
+            height: auto;
+            justify-content: space-between;
+        }
 
         li{
             margin: 30px auto;
+            @include desktop {
+                margin: auto 30px;
+            }
 
             &#sign {
-                padding: 12px 24px;
+                padding: 12px 10px;
                 border: none;
                 outline: none;
                 border-radius: 4px;
                 background-color: $darkblue;
                 color: $lighterblue;
+                text-align: center;
     
 
                 &:hover {
                     background-color: $light;
                     color: $darkblue;
                     transition: all 0.3s ease;
-                  }
+                }
             }
-        }
-
+        }   
         
     }
+
     
     .menu-btn{
         position:absolute;
@@ -69,7 +83,14 @@
         right: 30px;
         width: 40px;
         cursor: pointer;
+
+        @include desktop {
+            display: none;
+        }
     }
+
+   
+
 }
 
 .mobile-menu{
