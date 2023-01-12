@@ -15,9 +15,20 @@
             <li> <a href="#home"> </a>Home </li>
             <li> <a href="#products"> </a>Tours </li>
             <li> <a href="#about"> </a>About </li>
-            <li> <a href="#sign"> Sign up </a> </li>    
+            <li id="sign"> <a href="#sign"></a> Sign up </li>    
         </ul>
         <img src="images/menu_btn.png" alt="menu-btn" class="menu-btn">
     </nav>
+
+
+
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.navbar__link')
+    
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+    })
+    </script> 
 </body>
 </html>
