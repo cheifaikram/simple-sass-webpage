@@ -8,3 +8,31 @@
     margin: 0;
     padding: 0;
 }
+
+body, html{
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: $light;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    
+    &__cont1{
+        line-height: 1.5;
+        border: 1px solid black;
+        
+        h1{
+            color: $darkblue;
+        }
+        h2{
+            color: $darkgreen;
+        }
+        p{
+            color: $dark;
+        }
+    }
+}
