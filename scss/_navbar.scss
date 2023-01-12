@@ -20,6 +20,12 @@
 
     ul{
         list-style: none;
+        
+        &:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
     }
 
     &__link{
