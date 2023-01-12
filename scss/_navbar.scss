@@ -44,6 +44,12 @@
                 border-radius: 4px;
                 background: $darkgreen;
                 color: $darkblue;
+
+                &:hover {
+                    background: $lightblue;
+                    color: $darkergreen;
+                    transition: all 0.3s ease;
+                  }
             }
         }
 
