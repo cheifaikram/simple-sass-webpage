@@ -23,8 +23,9 @@ body, html{
     
     &__cont1{
         line-height: 1.5;
-        border: 1px solid black;
-        
+        width: 90%;
+        padding-top: 2.5rem;
+        padding-left: 0.5rem;
         h1{
             color: $darkblue;
         }
@@ -34,5 +35,27 @@ body, html{
         p{
             color: $dark;
         }
+        &--btn{
+            padding: 12px 10px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background: $lightgreen;
+            color: $darkblue;
+            width: 120px;
+            text-align: center;
+            margin: 10px 0;
+            font-weight: 600;
+
+            &:hover{
+                background: $darkgreen;
+                color: $light;
+            }
+
+        }
+    }
+
+    &__cont2{
+
     }
 }
