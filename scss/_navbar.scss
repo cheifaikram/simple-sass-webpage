@@ -12,10 +12,15 @@
     height: 12vh;
     padding: 0;
 
+
     &__logo{
         position: absolute;
         color: $darkblue;
         padding: 25px;
+        @include desktop {
+            font-size: 30px;
+            padding: 20px;
+        }
     }
 
     ul{
