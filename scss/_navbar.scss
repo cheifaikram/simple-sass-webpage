@@ -1,0 +1,46 @@
+@import 'variable';
+
+.navbar{
+    color: $darkgreen;
+    background-color: $lightgreen;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+
+    &__logo{
+        color: $darkblue;
+    }
+
+    &__link{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(71, 71, 143);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    
+    .menu-btn{
+        position:absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        cursor: pointer;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-links{
+    display: flex;
+    align-items:center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
